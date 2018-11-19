@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <!--Metadata stuff and things (required for proper mobile functionality via bootstrap) -->
   <meta charset="utf-8">
@@ -7,14 +8,15 @@
   <!--Adding a link to Bootstrap, a framework that I'll be using for this website-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <!--Adding a CSS Reset in, credit meyerweb.com-->
-  <link rel="stylesheet" href="css/reset.css">
+  <!--<link rel="stylesheet" href="css/reset.css">-->
   <!--Adding the fontawesome stylesheet in so that I can use some cool icons-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <!--Adding my own CSS, so far unused as Bootstrap is really powerful and takes care of mostly everything, who would've thought-->
   <link rel="stylesheet" href="css/master.css">
   <title></title>
 </head>
-<body>
+
+<body class="griff-projects">
   <!--A bootstrap navbar-->
   <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
     <!--At this point the Navbar title just has my name in it, might come up with a logo to put here later-->
@@ -34,18 +36,12 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="AboutMe.html">What I Think About Me</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="CV.html">Curriculum Vitae</a>
+            <!--This links to a placeholder CV file-->
+            <a class="dropdown-item" href="Files\CV.pdf">Curriculum Vitae</a>
           </div>
-        <li class="nav-item dropdown active">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Projects<span class="sr-only">(current)</span>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="Project1.html">Project 1</a>
-            <a class="dropdown-item" href="Project2.html">Project 2</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="Projects.html">All Projects</a>
-          </div>
+        <li class="nav-item active">
+          <a class="nav-link" href="Projects.html">Projects<span class="sr-only">(current)</span></a>
+        </li>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" href="ContactMe.html">Contact Me</a>
@@ -57,6 +53,58 @@
       </form>
     </div>
   </nav>
+
+  <!--A simple grid system that'll contain cards for each project, cards provided by bootstrap however heavily edited to fit what I want them to look like-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col griff-align-center">
+        <div class="card griff-card">
+          <img class="card-img-top" src="Images/Reversi.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Reversi</h5>
+            <h6 class="card-subtitle">Java</h6>
+            <p class="card-text">The game "Reversi" coded in Java with a GUI. Made as a final project for my AC11001 - Introduction to Software developtment class</p>
+            <a href="https://github.com/GriffinKF/Reversi" class="btn btn-success">Reversi GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+      <div class="col griff-align-center">
+        <div class="card griff-card">
+          <img class="card-img-top" src="Images/WebAuth.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Portfolio Website</h5>
+            <h6 class="card-subtitle">HTML/CSS</h6>
+            <p class="card-text">My Portfolio website, which you're currently looking at (meta). Made for my AC11002 - Web Authoring Class.</p>
+            <a href="https://github.com/GriffinKF/GriffinKF" class="btn btn-success">Website GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col griff-align-center">
+        <div class="card griff-card">
+          <img class="card-img-top" src="Images/DCMUN.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Doha College MUN</h5>
+            <h6 class="card-subtitle">HTML/CSS</h6>
+            <p class="card-text">A website I helped make for my High Schools MUN program. However the website was made using a CMS rather than from writing pure the code oursleves.</p>
+            <a href="https://dcmun.org" class="btn btn-success">DCMUN.org</a>
+          </div>
+        </div>
+      </div>
+      <div class="col griff-align-center">
+        <div class="card griff-card">
+          <img class="card-img-top" src="https://picsum.photos/300/300?image=0" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Project4</h5>
+            <h6 class="card-subtitle">Platfrom</h6>
+            <p class="card-text">Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace holystone mizzenmast quarter crow's nest nipperkin.</p>
+            <a href="#" class="btn btn-success">Linkerino</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!--Adding a few scripts required for Bootstrap-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -81,10 +129,14 @@
         Instagram
     </a>
     <!--It's actually not possible to link to a discord profile, even if I wanted too, so my solution was to leave my username there, for discord users, this will be easy enough to understand, so I went with it.-->
+    <!--Comment 2.0, having a fourth item in the footer makes it look terrible on mobile, so I'm sacrificing the discord. However, I'm just going to comment out the code rather than delete it, in case I decide to do something with it later-->
+    <!--
     <a class="navbar-brand" href="">
       <span width="30" height="30" class="d-inline-block align-top fab fa-discord" alt="">
         OHeaThere#0001
     </a>
+    -->
   </nav>
 </footer>
+
 </html>

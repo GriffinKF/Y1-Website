@@ -8,7 +8,7 @@
   <!--Adding a link to Bootstrap, a framework that I'll be using for this website-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <!--Adding a CSS Reset in, credit meyerweb.com-->
-  <link rel="stylesheet" href="css/reset.css">
+  <!--<link rel="stylesheet" href="css/reset.css">-->
   <!--Adding the fontawesome stylesheet in so that I can use some cool icons-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <!--Adding my own CSS, so far unused as Bootstrap is really powerful and takes care of mostly everything, who would've thought-->
@@ -27,7 +27,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -36,18 +36,12 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="AboutMe.html">What I Think About Me</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="CV.html">Curriculum Vitae</a>
+            <!--This links to a placeholder CV file-->
+            <a class="dropdown-item" href="Files\CV.pdf">Curriculum Vitae</a>
           </div>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Projects
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="Project1.html">Project 1</a>
-            <a class="dropdown-item" href="Project2.html">Project 2</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="Projects.html">All Projects</a>
-          </div>
+        <li class="nav-item">
+          <a class="nav-link" href="Projects.html">Projects</span></a>
+        </li>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" href="ContactMe.html">Contact Me</a>
@@ -60,7 +54,7 @@
     </div>
   </nav>
 
-  <!--A carousel item that will be the central feature of my landing page-->
+  <!--A bootstrap carousel item that will be the central feature of my landing page, I've changed it a bit because it wasn't working how I wanted it to on mobile-->
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -107,13 +101,13 @@
 </body>
 
 <footer>
-  <!--Footer that'll allow me to have an image and text, ideal for social media links-->
+  <!--Bootstrap footer that'll allow me to have an image and text, ideal for social media links-->
   <nav class="navbar navbar-dark bg-dark">
     <a class="navbar-brand" href="https://github.com/GriffinKF">
       <span width="30" height="30" class="d-inline-block align-top fab fa-github-square" alt="">
         Github
     </a>
-    <!--Since I have no intention of aSctually linking to my personal twitter account, this is just a link to the twitter homepage, in the case that I had a professional twitter as a web designer, then this would be useful-->
+    <!--Since I have no intention of actually linking to my personal twitter account, this is just a link to the twitter homepage, in the case that I had a professional twitter as a web designer, then this would be useful-->
     <a class="navbar-brand" href="https://twitter.com">
       <span width="30" height="30" class="d-inline-block align-top fab fa-twitter-square" alt="">
         Twitter
@@ -124,10 +118,13 @@
         Instagram
     </a>
     <!--It's actually not possible to link to a discord profile, even if I wanted too, so my solution was to leave my username there, for discord users, this will be easy enough to understand, so I went with it.-->
+    <!--Comment 2.0, having a fourth item in the footer makes it look terrible on mobile, so I'm sacrificing the discord. However, I'm just going to comment out the code rather than delete it, in case I decide to do something with it later-->
+    <!--
     <a class="navbar-brand" href="">
       <span width="30" height="30" class="d-inline-block align-top fab fa-discord" alt="">
         OHeaThere#0001
     </a>
+    -->
   </nav>
 </footer>
 
