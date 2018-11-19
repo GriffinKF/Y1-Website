@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <!--Metadata stuff and things (required for proper mobile functionality via bootstrap) -->
   <meta charset="utf-8">
@@ -7,13 +8,14 @@
   <!--Adding a link to Bootstrap, a framework that I'll be using for this website-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <!--Adding a CSS Reset in, credit meyerweb.com-->
-  <link rel="stylesheet" href="css/reset.css">
+  <!--<link rel="stylesheet" href="css/reset.css">-->
   <!--Adding the fontawesome stylesheet in so that I can use some cool icons-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <!--Adding my own CSS, so far unused as Bootstrap is really powerful and takes care of mostly everything, who would've thought-->
   <link rel="stylesheet" href="css/master.css">
   <title></title>
 </head>
+
 <body>
   <!--A bootstrap navbar-->
   <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
@@ -34,18 +36,12 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="AboutMe.html">What I Think About Me</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="CV.html">Curriculum Vitae</a>
+            <!--This links to a placeholder CV file-->
+            <a class="dropdown-item" href="Files\CV.pdf">Curriculum Vitae</a>
           </div>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Projects
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="Project1.html">Project 1</a>
-            <a class="dropdown-item" href="Project2.html">Project 2</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="Projects.html">All Projects</a>
-          </div>
+        <li class="nav-item">
+          <a class="nav-link" href="Projects.html">Projects</a>
+        </li>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" href="ContactMe.html">Contact Me</a>
@@ -57,6 +53,86 @@
       </form>
     </div>
   </nav>
+
+  <!--Main page contact for the "About Me", this uses bootstrap classes to aid with the collumn layout. But everything else including the responsive design is my own-->
+  <div class="griff-aboutme">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs">
+          <img src="Images/PakFlag.jpg" alt="Pakistans Flag">
+        </div>
+        <div class="col griff-text-bg">
+          <div class="row">
+            <div class="col">
+              <div class="griff-title-bg griff-responsive-title"> Early Life </div>
+            </div>
+          </div>
+          <div class="griff-text-bg griff-responsive-text"> I was born in the city of Islamabad in Pakistan, and although I chose to have a Pakistani flag represet the "Early Life" section of this about me page. That's about the only relation I
+            really have with my home country. My parents moved to Qatar before I was even a year old, the background of this page is actually one of the Doha Skyline. Doha was where I lived for 19 years, where I went to school and did everything
+            before coming to Dundee for University. </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col griff-text-bg">
+          <div class="row">
+            <div class="col">
+              <div class="griff-rightalign griff-title-bg griff-responsive-title"> Studies </div>
+            </div>
+          </div>
+          <div class="griff-rightalign griff-text-bg griff-responsive-text"> In high school and during my IGCSE (I for international) I had a pretty basic subject spread. Sciences/Maths/Humanities. Little bit of everything. I only really started
+            taking an interest in computing as my school offered the ability to complete the course in one year and sit the exam early. Which was appealing to me, and from there, I guess the interest grew, here I am today, studying CS. Although,
+            even though it may have been my first choice, it wasn't my dream subject </div>
+        </div>
+        <div class="col-xs">
+          <img src="Images/Code.jpg" alt="Image Of Random Code">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs">
+          <img src="Images/ArriAlexa.jpg" alt="">
+        </div>
+        <div class="col griff-text-bg">
+          <div class="row">
+            <div class="col">
+              <div class="griff-title-bg griff-responsive-title"> The Dream </div>
+            </div>
+          </div>
+          <div class="griff-text-bg griff-responsive-text"> I've always wanted to make movies. In fact, that is the dream subject I was talking about earlier, but being an international student and with how international fees go, neither myself nor
+            my parents really saw studying film to be viable. However, I maintain a keen interest in the film making arts and read a lot about it in my spare time, one day when I have a study CS job, I might even try to make my own movie. </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col griff-text-bg">
+          <div class="row">
+            <div class="col">
+              <div class="griff-rightalign griff-title-bg griff-responsive-title"> My Work </div>
+            </div>
+          </div>
+          <div class="griff-rightalign griff-text-bg griff-responsive-text"> University is expensive, especially if you're an internatinal student. So, I've maintained a somewhat strange source of income. I work for a website known as
+            Guardian.Services (that's what the orange skull logo is from), why is it strange you ask? Well, I get paid to play video games. In this case, a game known as Destiny. My go to explanation is that people are bad at video games, so they
+            pay me to be good for them. The work I do is known as boosting or account recovering, and I take a small amount of pride in the fact that the general community hates what people like me do, it tickles my ego. </div>
+        </div>
+        <div class="col-xs">
+          <img src="Images/GS.png" alt="The logo for Guardian.Services">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs">
+          <img src="Images/FIFA.png" alt="Logo for the popular FIFA Video Game">
+        </div>
+        <div class="col griff-text-bg">
+          <div class="row">
+            <div class="col">
+              <div class="griff-title-bg griff-responsive-title"> Hobbies </div>
+            </div>
+          </div>
+          <div class="griff-text-bg griff-responsive-text"> As with any guy my age, I like video games. I prefer story based Role Playing Games, but also play First Person Shooters like Destiny (although that's for work rather than for fun). Other
+            games include FIFA, which I play because I both enjoy watching and playing football in real life. The only other fun fact (more like brag) that I can think of for this section is that in 2015 I qualified to play in the FIFA Interactive
+            World Cup (an eSports event) only to get subsequently disqualified for being under 18 </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!--Adding a few scripts required for Bootstrap-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -81,10 +157,14 @@
         Instagram
     </a>
     <!--It's actually not possible to link to a discord profile, even if I wanted too, so my solution was to leave my username there, for discord users, this will be easy enough to understand, so I went with it.-->
+    <!--Comment 2.0, having a fourth item in the footer makes it look terrible on mobile, so I'm sacrificing the discord. However, I'm just going to comment out the code rather than delete it, in case I decide to do something with it later-->
+    <!--
     <a class="navbar-brand" href="">
       <span width="30" height="30" class="d-inline-block align-top fab fa-discord" alt="">
         OHeaThere#0001
     </a>
+    -->
   </nav>
 </footer>
+
 </html>

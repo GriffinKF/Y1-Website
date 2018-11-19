@@ -1,0 +1,61 @@
+/* I've stuck "griff-" infront of all my tags because some of the names I was trying to use clashed with bootstrap */
+.griff-aboutme {
+  background-image: url("../images/DohaEdited.png");
+}
+
+.griff-rightalign {
+  text-align: right;
+}
+
+.griff-text-bg {
+  background-color: white;
+  opacity: 0.6;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.griff-title-bg {
+  background-color: black;
+  opacity: 0.9;
+  color: white;
+}
+
+.griff-responsive-title {
+  font-size: 2vw;
+}
+
+.griff-responsive-text {
+  font-size: 1vw;
+  color: black;
+  font-weight: bold;
+}
+
+/*This is a response to the first bit of CSS that gave me a real struggle. The Responsive Text Scaling used in the previous two CSS elements started causing problems at lower widths, like moblie devices, so I change the relative sizes for smaller screens*/
+@media screen and (max-width: 950px) {
+  .griff-responsive-title {
+    font-size: 2vw;
+  }
+
+  .griff-responsive-text {
+    font-size: 2vw;
+    color: black;
+    font-weight: bold;
+  }
+}
+
+.griff-projects {
+  background-image: url("../images/CodeLargeBlurred.jpg");
+}
+
+.griff-card {
+  width: 300px;
+  text-align: left;
+}
+
+/*I probably spent about an hour trying to align the cards to the center of the grid, for some reason this worked, event though this is for a text align and I don't want the text to be center aligned. So I just use this then align the text to the left in .griff-card, there's probably a much smarter way to go about this but I'm just happy it's working now ya know*/
+.griff-align-center {
+  text-align: -webkit-center;
+  /*This also worked out to be the exact area I needed some padding so here it is, in the same tag.*/
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
