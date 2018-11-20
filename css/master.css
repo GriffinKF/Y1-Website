@@ -30,6 +30,11 @@
   font-weight: bold;
 }
 
+.griff-followme {
+  text-align: center;
+  font-size: 1vw;
+}
+
 /*This is a response to the first bit of CSS that gave me a real struggle. The Responsive Text Scaling used in the previous two CSS elements started causing problems at lower widths, like moblie devices, so I change the relative sizes for smaller screens*/
 @media screen and (max-width: 950px) {
   .griff-responsive-title {
@@ -40,6 +45,11 @@
     font-size: 2vw;
     color: black;
     font-weight: bold;
+  }
+
+  .griff-followme {
+    text-align: center;
+    font-size: 3vw;
   }
 }
 
@@ -52,10 +62,31 @@
   text-align: left;
 }
 
-/*I probably spent about an hour trying to align the cards to the center of the grid, for some reason this worked, event though this is for a text align and I don't want the text to be center aligned. So I just use this then align the text to the left in .griff-card, there's probably a much smarter way to go about this but I'm just happy it's working now ya know*/
+/*I probably spent about an hour trying to align the cards to the center of the grid on my Projects, for some reason this worked, even though this is for a text align and I don't want the text to be center aligned. So I just use this then align the text to the left in .griff-card, there's probably a much smarter way to go about this but I'm just happy it's working now ya know*/
 .griff-align-center {
   text-align: -webkit-center;
-  /*This also worked out to be the exact area I needed some padding so here it is, in the same tag.*/
+  /*This also worked out to be the exact area I needed some padding in, so here it is, in the same tag.*/
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.griff-contactme {
+  background-image: url("Backgrounds/ContactMeEdited.jpg");
+}
+
+.griff-link, .griff-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/*The following two class rules are for my carousel. They center the image regardless of what size screen you are view from, making sure the images in the carousel always look good*/
+.griff-carousel {
+  display: flex;
+  justify-content: center;
+  height: 900px;
+  overflow: hidden;
+}
+
+.griff-carousel-image {
+  flex: none;
 }
