@@ -1,6 +1,6 @@
 /* I've stuck "griff-" infront of all my tags because some of the names I was trying to use clashed with bootstrap */
 .griff-aboutme {
-  background-image: url("GriffinKF/Images/DohaEdited.png");
+  background-image: url("Backgrounds/DohaEdited.png");
 }
 
 .griff-rightalign {
@@ -44,7 +44,7 @@
 }
 
 .griff-projects {
-  background-image: url("../images/CodeLargeBlurred.jpg");
+  background-image: url("Backgrounds/CodeLargeBlurred.jpg");
 }
 
 .griff-card {
