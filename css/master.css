@@ -21,11 +21,11 @@
 }
 
 .griff-responsive-title {
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 .griff-responsive-text {
-  font-size: 1vw;
+  font-size: 1.2vw;
   color: black;
   font-weight: bold;
 }
@@ -35,8 +35,15 @@
   font-size: 1vw;
 }
 
-/*This is a response to the first bit of CSS that gave me a real struggle. The Responsive Text Scaling used in the previous two CSS elements started causing problems at lower widths, like moblie devices, so I change the relative sizes for smaller screens*/
 @media screen and (max-width: 950px) {
+  .griff-followme {
+    text-align: center;
+    font-size: 3vw;
+  }
+}
+
+/*This is a response to the first bit of CSS that gave me a real struggle. The Responsive Text Scaling used in the previously started causing problems at lower widths, like moblie devices, so I change the relative sizes for smaller screens*/
+@media screen and (max-width: 690px) {
   .griff-responsive-title {
     font-size: 2vw;
   }
@@ -46,10 +53,41 @@
     color: black;
     font-weight: bold;
   }
+}
 
-  .griff-followme {
-    text-align: center;
+@media screen and (max-width: 530px) {
+  .griff-responsive-title {
+    font-size: 2.4vw;
+  }
+
+  .griff-responsive-text {
+    font-size: 2.1vw;
+    color: black;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .griff-responsive-title {
+    font-size: 2.7vw;
+  }
+
+  .griff-responsive-text {
+    font-size: 2.2vw;
+    color: black;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .griff-responsive-title {
     font-size: 3vw;
+  }
+
+  .griff-responsive-text {
+    font-size: 2.3vw;
+    color: black;
+    font-weight: bold;
   }
 }
 
