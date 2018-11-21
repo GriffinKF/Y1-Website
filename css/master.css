@@ -129,7 +129,39 @@
   flex: none;
 }
 
-.griff-twitter {
-  height: 100%;
-  max-height: 2721px;
+/*The following series of media queries are terrible, not good code practise at all. But for some reason the Twitter Widget I have imbeded was displaying different properties when tested on Chrome using the Device Toolbar and when actually looked at from a phone or tablet once the website was live. So I had to induvidually code the height of the widget at various page widths.*/
+@media screen and (max-width: 1920px) {
+  .griff-twitter {
+    height: 740px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .griff-twitter {
+    height: 840px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .griff-twitter {
+    height: 1100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .griff-twitter {
+    height: 1480px;
+  }
+}
+
+@media screen and (max-width: 509px) {
+  .griff-twitter {
+    height: 1650px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .griff-twitter {
+    height: 2190px;
+  }
 }
