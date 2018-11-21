@@ -129,7 +129,8 @@
   flex: none;
 }
 
-/*The following series of media queries are terrible, not good code practise at all. But for some reason the Twitter Widget I have imbeded was displaying different properties when tested on Chrome using the Device Toolbar and when actually looked at from a phone or tablet once the website was live. So I had to induvidually code the height of the widget at various page widths.*/
+/*NEVER MIND, THE REST OF THIS IS USELESS. I WAS STUPID AND FORGOT TO CLOSE A DIV TAG AND THAT CAUSED ALL THESE PROBLEMS AHHHHHHHHHHHHHHHH*/
+/*The following series of media queries are terrible, not good code practise at all. But for some reason the Twitter Widget I have imbeded was displaying different properties when tested on Chrome using the Device Toolbar and when actually looked at from a phone or tablet once the website was live. So I had to induvidually code the height of the widget at various page widths.
 @media screen and (max-width: 1920px) {
   .griff-twitter {
     height: 740px;
@@ -165,3 +166,4 @@
     height: 2190px;
   }
 }
+*/
